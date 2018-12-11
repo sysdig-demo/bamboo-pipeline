@@ -1,4 +1,6 @@
 FROM debian:stretch
+LABEL version="0.1"
+LABEL name="user-audit"
 RUN apt-get update
 RUN apt-get install -y apt-transport-https curl gnupg2 cron nano openssh-server
 RUN curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
